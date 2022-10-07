@@ -6,8 +6,7 @@ Este projeto foi desenvolvido durante a iFood Dev Week, em parceria com a DIO</p
 <h5 align="center"> 💻 Concluído! </h5>
 <p align="center"> Este projeto foi feito com a finalidade de estudos, 
 portanto ele ainda pode (e vai) ser aprimorado </p>
-<p align="center"> *"Nunca aceite o mundo como ele parece ser, 
-ouse vê-lo como ele poderia ser."* ~ Henry Winston </p>
+<p align="center"> "Nunca aceite o mundo como ele parece ser, ouse vê-lo como ele poderia ser." ~ Henry Winston </p>
 
 <h3>Features</h3>
 
