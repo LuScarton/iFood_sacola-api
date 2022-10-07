@@ -25,10 +25,21 @@ public class SacolaResource {
         return sacolaService.verSacola(id);
     }
 
+    @GetMapping("{id}/item/{itemId}")
+    public Item verItem (@PathVariable("itemId") Long itemId){
+        return sacolaService.verItem(itemId);
+    }
+
+
     @PatchMapping("/fecharSacola/{sacolaId}")
     public Sacola fecharSacola (@PathVariable("sacolaId") Long sacolaId,
                                 @RequestParam("formaPagamento") int formaPagamento){
         return sacolaService.fecharSacola(sacolaId, formaPagamento);
     }
 
+    @DeleteMapping("{sacolaId}/item/{itemId}")
+    public void excluirItem(@PathVariable("sacolaId") Long sacolaId,
+                            @PathVariable("itemId") Long itemId){
+        sacolaService.excluirItem(sacolaId, itemId);
+    }
 }

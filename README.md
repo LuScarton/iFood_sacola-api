@@ -1,16 +1,21 @@
-<h1>Sacola API 💻 [iFood Dev Week]</h1>
+<h1>Sacola RESTful API 💻 [iFood Dev Week]</h1>
 <p>Desenvolvimento de uma Sacola API para servir uma aplicação com domínio de delivery<br>
 Este projeto foi desenvolvido durante a iFood Dev Week, em parceria com a DIO</p>
 
 <h3>Status do Projeto</h3>
-<p align="center"> 💻 Em construção... </p>
+<h5 align="center"> 💻 Concluído! </h5>
+<p align="center"> Este projeto foi feito com a finalidade de estudos, 
+portanto ele ainda pode (e vai) ser aprimorado </p>
+<p align="center"> *"Nunca aceite o mundo como ele parece ser, 
+ouse vê-lo como ele poderia ser."* ~ Henry Winston </p>
 
 <h3>Features</h3>
 
-- [x] Incluir itens na sacola<br>
-- [x] Visualizar sacola<br>
-- [x] Fechar sacola<br>
-- [ ] Excluir item da sacola<br>
+- [✔️] Incluir itens na sacola<br>
+- [✔️] Visualizar sacola<br>
+- [✔️] Visualizar item da sacola<br>
+- [✔️] Fechar sacola<br>
+- [✔️] Excluir item da sacola<br>
 
 <h3>Ferramentas utilizadas</h3>
 <table>
@@ -44,7 +49,7 @@ No Terminal/Console:
 	<li>Com a aplicação rodando, clique aqui: <a href="http://localhost:8081/swagger-ui/">http://localhost:8081/swagger-ui/</a></li>
     <li>Caso prefira utilizar o Postman: </li>
 </ol>
-<a href="https://drive.google.com/file/d/1gMy8IbpFKSi8Imc40UYBLCTgOUKgO9t_/view?usp=sharing"> 🚀 Postman: Collection Sacola API</a><br><br>
+<a href="https://drive.google.com/file/d/1o1Q6nvSMIVDe1McqlAHHAZqe-cZ-3AMn/view?usp=sharing"> 🚀 Postman: Collection Sacola API</a><br><br>
 
 <img src="https://i.imgur.com/UBHcWKt.png" alt="Sacola API Swagger UI">
 

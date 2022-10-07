@@ -78,6 +78,15 @@ public class SacolaServiceImpl implements SacolaService {
     }
 
     @Override
+    public Item verItem(Long itemId) {
+        return itemRepository.findById(itemId).orElseThrow(
+                () -> {
+                    throw new RuntimeException("Item não encontrado.");
+                }
+        );
+    }
+
+    @Override
     public Sacola fecharSacola(Long id, int nroFormaPagamento) {
         Sacola sacola = verSacola(id);
 
@@ -90,6 +99,27 @@ public class SacolaServiceImpl implements SacolaService {
         sacola.setFormaPagamento(formaPagamento);
         sacola.setFechada(true);
         return sacolaRepository.save(sacola);
+
+    }
+
+    @Override
+    public void excluirItem(Long sacolaId, Long itemId){
+
+        Sacola sacola = verSacola(sacolaId);
+        Item item = verItem(itemId);
+
+        if(sacola.isFechada()){
+            throw new RuntimeException("Esta sacola está fechada.");
+        }
+
+        if (sacola.getItens().isEmpty()){
+            throw new RuntimeException("A sacola já está vazia.");
+        }
+
+        sacola.getItens().removeIf(itemDaSacola -> item.getId().equals(itemDaSacola.getId()));
+        sacola.setValorTotal(sacola.getValorTotal() - (item.getProduto().getValorUnitario() * item.getQuantidade()));
+        sacolaRepository.save(sacola);
+        itemRepository.delete(item);
 
     }
 }
